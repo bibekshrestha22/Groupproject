@@ -1,0 +1,316 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Urban Hotel Kyoto/Services</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Stylesheet
+    ================================================== -->
+
+<style type="text/css">
+	@font-face {
+  font-family:"Anton-Regular";
+  src: url("../fonts/Anton-Regular.ttf");
+}
+body{
+
+  background-color: #F6ECE3;
+}
+.cell {
+  padding: 50px;
+  font-family:"Anton-Regular";
+  font-size: 20px;
+}
+
+.container0 {
+	margin-top: 15px;
+  padding: 20px 40px 40px;
+  max-width: 100%;
+  background-color: #E7674D;
+
+}
+.container__image {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin: 20px 30px 0 0;
+  transition: transform 0.6s;
+}
+
+
+.container__text {
+  display: inline-block;
+  width: 46%;
+}
+.container1 {
+margin-top: 15px;
+  padding: 20px 40px 40px;
+  max-width: 100%;
+  }
+.container__image1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-bottom: 80px;
+  transition: transform 0.6s;
+}
+
+
+.container__image1:hover{
+ transform: scale(1.1,1.1);
+} 
+.container__image:hover{
+ transform: scale(1.1,1.1);
+} 
+
+.container__text1 {
+  display: inline-block;
+  width: 46%;
+  float: left;
+  margin: 10px 40px 0 0;
+}
+
+	.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #eb196e;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font-family:"Anton-Regular";
+  font-size: 15px;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+h1 {
+margin-left: 45%;
+margin-right: 45%;
+color: white;
+position: absolute;
+text-shadow: 2px 2px 4px #000000;
+}
+h2 {
+color: white;
+text-shadow: 2px 2px 4px #000000;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.container3 ul{
+   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding-left: 750px;
+  position:absolute;
+
+}
+.container3 li{
+  float: left;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-size: 20px;
+  text-shadow: 0px 0px 1px #000000;
+  opacity: 70%;
+
+
+}
+
+.active {
+  background-color: red;
+}
+.logo{
+      width:150px;
+      position: fixed;
+      top: -30px;
+      left: 10px;
+      float:left;
+    }
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+.imageprofile{
+  margin:30px;
+   height:150px;
+   width: 150px;
+   border-radius: 50%;
+   border: 10px 
+   solid #53A865;
+}
+</style>
+</head>
+<body>
+    <div class="container3">
+<a href="index.html"> <img class="logo" src="../image/logo.png"/></a>
+<nav>
+<ul>
+  <li><a class="active" href="../index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="../html/Services.html">Services</a></li>
+  <li><a href="booking.html">Booking</a></li>
+  <li><a href="registration.html">Become a member!</a></li>
+
+</ul>
+</nav>
+</div>
+<br>
+<br>
+<br>
+<br>
+	<h2><a href="../index.html">Home</a>/<a href="../html/Services.html">Services</a>/Activities</h2>
+	<h1>Activities</h1>
+<div class="cell">
+
+
+<div class="container0">
+  <img class="container__image" src="../Images/Scuba_Diving.jpg"/>
+  <div class="container__text">
+    <h3>Adventure Activities</h3>
+    <p>Add a little adventure to your stay with one of our adventure activities! Choose from Snorkeling, Dolphin Cruises, Sunset Party Cruise, Fishing Trips, Kayaking, Scuba Diving and more!</p>
+    <p>Email sudhamsuthapa@gmail.com or call (850) 916-9755 xxxx for more details. Advance reservations required.</p>
+    <a href="tel:+08024707175">
+                <button class="btn draw-border">Call</button></a>
+    <a href="mailto:sudhamsuthapa@gmail.com"><button class="btn draw-border">Email</button>
+                </a>
+  </div>
+</div>
+
+  <div class="container1">
+  <img class="container__image1" src="../Images/bikes.jpg">
+  <div class="container__text1">
+    <h3>Rental Bikes</h3>
+    <p>Guests at the Margaritaville Beach Hotel may now explore and travel Pensacola Beach by bicycle! Each bike comes equipped with a basket, drink holder and lock. Guests may reserve their bike at the front desk from 7 a.m. – 7 p.m. daily. The half day rental (4 hours) is $10 and the full day rental (8 hours) is $20. Guests must be over 16 to rent the bikes.</p>
+    <p>Email sudhamsuthapa@gmail.com or call (850) 916-9755 xxxx for more details. Advance reservations required.</p>
+    
+    <a href="tel:+08024707175">
+                <button class="btn draw-border">Call</button></a>
+    <a href="mailto:sudhamsuthapa@gmail.com"><button class="btn draw-border">Email</button>
+                </a>
+    
+  </div>
+</div>
+  <div class="container0">
+  <img class="container__image"  src="../Images/chairs.jpg"/>
+  <div class="container__text">
+    <h3>Beach Chair Service Rental</h3>
+    <p>Beach Chairs & Umbrellas set up directly overlooking the Gulf of Mexico are available for rent daily through Lazy Days Beach Rentals. Pick out a seat and the friendly beach services team will assist in making your beach experience a comfortable one. Chair costs can be billed to your room or paid directly to Beach Services.
+
+*Guests are welcome to bring their own chairs and umbrellas; their is no charge to set up on the beach.</p>
+    <p>Email sudhamsuthapa@gmail.com or call (850) 916-9755 xxxx for more details. Advance reservations required.</p>
+    <a href="tel:+08024707175">
+                <button class="btn draw-border">Call</button></a>
+    <a href="mailto:sudhamsuthapa@gmail.com"><button class="btn draw-border">Email</button>
+                </a>
+  </div>
+</div>
+
+</div>
+<div class="footer">
+  <a href="about.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="../html/Services.html">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="booking.html">Booking</a>
+  <h2>Developed By:</h2>
+  <img class="imageprofile" src="../Images/img1.png" alt="This is a small profile image of Thapa Sudhamsu.">
+  <img class="imageprofile" src="../Images/prakash.jpg" alt="This is a small profile image of Sunar prakash.">
+  <img class="imageprofile" src="../Images/dev.jpg" alt="This is a small profile image of Gurung Devendra.">
+  <img class="imageprofile" src="../Images/bib.jpg" alt="This is a small profile image of Serestha Bibek.">
+  <p>&copy; <i>Copyright 1999-2021 by KCGI. All Rights Reserved.</i></p>
+</div>
+</body>
+<html>

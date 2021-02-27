@@ -1,0 +1,273 @@
+body{
+  font-family: Verdana, sans-serif;
+  background-color: #F6ECE3;
+}
+.container ul{
+   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding-left: 750px;
+  position:absolute;
+
+}
+.container li{
+  float: left;
+}
+
+
+.container li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-size: 20px;
+  text-shadow: 0px 0px 1px #000000;
+  opacity: 70%;
+
+
+}
+
+.active {
+  background-color: red;
+}
+
+.Banner{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 90px;
+  position: absolute;
+  top:400px;
+  color: #F4D03F;
+  right: 480px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.Banner2{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+  position: absolute;
+  top:540px;
+  color: #F4D03F;
+  right: 550px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.tickets2 h2{
+      font-family: 'Brush Script MT', cursive;
+      font-size: 10px;
+}
+
+
+/* On smaller screens, decrease text size 
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}*/
+
+.main{
+  height: 50px;
+  width: 40%;
+  text-align: justify;
+  float:left;
+  padding-left: 50px;
+  font-size:20px;
+  margin-top: 50px;
+}
+.main1{
+  margin-top: 70px;
+  text-align: justify;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+.main2{
+  height: 250px;
+  width: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  float: left;
+  transition: transform 1s;
+  webkit-transition: transform 5s; /* For Safari
+3.1 to 6.0 */
+
+
+
+
+}
+.main2:hover{
+  opacity: 70%;
+  transform: rotate(360deg) scale(3,2)
+
+}
+
+  .box {
+    float: left;
+    margin: 15px;
+    
+    text-align: justify;
+    box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.25); 
+    width: 30%;
+    border-radius: 5px;
+    position: relative;
+     }
+
+
+    .box:hover {
+    opacity: 70%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #EAFAF1;
+    text-shadow: 0px 0px 1px #000000;
+
+    }
+
+    .tickets{
+      overflow: hidden;
+      width: auto; 
+      padding-top: 50px;
+      margin-left: 50px;
+      font-size: 20px;
+    }
+    .tickets h2{
+      font-family: 'Brush Script MT', cursive;
+      font-size: 40px;
+      text-align: center;
+    }
+    .main h2{
+       font-family: 'Brush Script MT', cursive;
+      font-size: 40px;
+      
+    }
+     .main1 h2{
+       font-family: 'Brush Script MT', cursive;
+      font-size: 40px;
+  
+    }
+    .tickets img{
+      height:226px;
+      width: 400px;
+      padding-left: 40px;
+    }
+    .tickets p{
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .tickets2 h2{
+      font-family: 'Brush Script MT', cursive;
+      font-size: 40px;
+      text-align: center;
+      
+    }
+    .tickets2{
+      margin-top:100px;
+       overflow: hidden;
+      width: auto; 
+      padding-top: 50px;
+      margin-left: 50px;
+      font-size: 20px;
+    
+    }
+     .tickets2 video{
+      height:226px;
+      width: 400px;
+      margin-left: 20px;
+    }
+     .tickets2 img{
+      height:226px;
+      width: 400px;
+      padding-left: 40px;
+    }
+    .tickets2 p{
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .logo{
+      width:150px;
+      position: fixed;
+      top: -30px;
+      left: 10px;
+      float:left;
+    }
+   .pcards img{
+    margin-left: 10px;
+    margin-right: 20px;
+    height:400px;
+    width: 600px;
+    border-radius: 500px;
+    float: left;
+
+     }
+     .pcards p{
+      text-align: justify;
+      font-size: 20px;
+      margin:10px;
+
+     }
+    .pcards img:hover {
+    opacity: 70%;
+    box-shadow: 0 8px 16px 0 rga(0,0,0,0.2);
+    background-color: #EAFAF1;
+    text-shadow: 0px 0px 1px #000000;
+      }
+    .tickets h2{
+      font-family: 'Brush Script MT', cursive;
+      font-size: 40px;
+      text-align: center;
+    }
+    .pcards h2{
+      font-family: 'Brush Script MT', cursive;
+      font-size: 50px;
+      text-align: center;
+    }
+    .footer ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F4D03F;;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  position:relative;
+
+}
+.footer li{
+  float: left;
+
+
+}
+.footer a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+
+/* Login page CSS codes starts from here */
+.loginblock{
+  margin-left: 500px;
+  margin-top: 90px;
+  height: 460px;
+  width: 500px;
+  background-color: white;
+  box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.25);
+}
+/* Registration page CSS codes starts from here */
+.registblock{
+  margin-left: 500px;
+  margin-top: 50px;
+  height: 660px;
+  width: 500px;
+  background-color: white;
+  box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
